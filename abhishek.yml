@@ -9,6 +9,18 @@ spring:
           uri: https://github.com/theabhishekmandal/config-repo.git
           clone-on-start: true
           default-label: main
+
+redis:
+  client:
+    nodeAddress:
+      -  'redisCluster'
+    operationMode: cluster
+    encrypted: false
+    password: amazonSecret
+    sslEnabled: true
+    sslEnableEndpointIdentification: false
+    sslTrustStore: "redis.jks"
+    sslTruststorePassword: "amazonSecretKey"
 #  security:
 #    user:
 #      name:root
