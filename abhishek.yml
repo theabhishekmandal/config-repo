@@ -16,11 +16,11 @@ redis:
       -  'redisCluster'
     operationMode: cluster
     encrypted: false
-    password: {amazonSecretKey}:passwordArn
+    password: "{amazonSecretKey}:passwordArn"
     sslEnabled: true
     sslEnableEndpointIdentification: false
     sslTrustStore: "redis.jks"
-    sslTruststorePassword: {amazonSecretKey}:sslTruststoreArn
+    sslTruststorePassword: "{amazonSecretKey}:sslTruststoreArn"
 #  security:
 #    user:
 #      name:root
